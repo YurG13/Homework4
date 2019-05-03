@@ -9,7 +9,6 @@ import com.aca.car.fabric.car.features.properties.CarProperties;
 import com.aca.car.fabric.car.features.properties.enumProperties.CarClass;
 import com.aca.car.fabric.car.features.properties.enumProperties.Engine;
 import com.aca.car.fabric.car.features.properties.enumProperties.Wheels;
-import com.aca.car.fabric.car.features.types.enumTypes.CarType;
 import com.aca.car.fabric.input.features.InputFeatures;
 
 public class Main {

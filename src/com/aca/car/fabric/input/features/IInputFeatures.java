@@ -7,7 +7,6 @@ import com.aca.car.fabric.car.features.properties.enumProperties.Engine;
 import com.aca.car.fabric.car.features.properties.enumProperties.Wheels;
 import com.aca.car.fabric.car.features.types.enumTypes.CarType;
 
-import java.time.Year;
 
 public interface IInputFeatures {
     CarType inputTypeCar();

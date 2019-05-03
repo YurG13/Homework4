@@ -1,14 +1,13 @@
 package com.aca.car.fabric;
 
-import com.aca.car.fabric.car.features.properties.enumProperties.CarClass;
 import com.aca.car.fabric.car.features.types.*;
 import com.aca.car.fabric.car.features.types.car.ab.type.CarTypesAbstract;
 import com.aca.car.fabric.input.features.InputFeatures;
 
-public class SelectedFeatures extends InputFeatures{
+class SelectedFeatures extends InputFeatures{
     CarTypesAbstract carTypesAbstract;
 
-    public void typeClass() {
+    void typeClass() {
         switch (inputTypeCar()) {
             case Sedan:
                 carTypesAbstract = new Sedan();
