@@ -1,7 +1,6 @@
 package com.aca.car.fabric.input.features;
 
 import com.aca.car.fabric.car.features.design.exterior.enumExterior.ExteriorColor;
-import com.aca.car.fabric.car.features.design.exterior.enumExterior.InConsolExtColor;
 import com.aca.car.fabric.car.features.design.interior.enumInterior.InteriorColor;
 import com.aca.car.fabric.car.features.properties.enumProperties.CarClass;
 import com.aca.car.fabric.car.features.properties.enumProperties.Engine;
@@ -12,7 +11,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class InputFeatures extends AbstractInputFeatures {
-    Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
 
     @Override
     public CarType inputTypeCar() {
