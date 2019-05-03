@@ -18,10 +18,10 @@ public class Main {
         SelectedFeatures selectedFeatures = new SelectedFeatures();
         CarPrice carPrice = new CarPrice();
 
-       //@ndunum e meqenai tipe
+       //accepts type of the car
         selectedFeatures.typeClass();
 
-        //tpum e meqenai tip@
+        //prints type of the car
         selectedFeatures.carTypesAbstract.doorNum();
         selectedFeatures.carTypesAbstract.seatsNum();
         selectedFeatures.carTypesAbstract.tireNum();
@@ -29,7 +29,7 @@ public class Main {
 
         AbstractCarProperties abstractCarProperties = new CarProperties();
 
-        // @ndunum  e meqenai parpametrer@
+        // accepts settings of the car
         CarClass carClass = inputFeatures.inputCarClass();
         Engine engine = inputFeatures.inputEngine();
         Wheels wheels = inputFeatures.inputWheels();
@@ -37,7 +37,7 @@ public class Main {
         InteriorColor interiorColor = inputFeatures.inputInteriorColor();
         int year = inputFeatures.inputYear();
 
-        //tpum e meqenai @ntrvac parametrer@
+        //prints settings of the chosen car
         abstractCarProperties.carClass(carClass);
         abstractCarProperties.engine(engine);
         abstractCarProperties.wheels(wheels);
@@ -45,18 +45,19 @@ public class Main {
 
         AbstractInteriorExterior abstractInteriorExterior = new CarDesign();
 
-        // tpum e meqenai @ntrvac design@
+        //prints design of the chosen car
         abstractInteriorExterior.exteriorColor(exteriorColor);
         abstractInteriorExterior.interiorColor(interiorColor);
 
 
-        //hashvum meqenai gin@ Car prise
+        //calculate price of the car
         carPrice.priceType(selectedFeatures.getCarType1());
         carPrice.classPrice(carClass);
         carPrice.wheelsPrice(wheels);
         carPrice.enginePrice(engine);
         carPrice.yearPrice(year);
-        System.out.println("Car Prise is a " + carPrice.price + "$");
+
+        System.out.println("The Prise of the car " + carPrice.price + " $");
 
     }
 }

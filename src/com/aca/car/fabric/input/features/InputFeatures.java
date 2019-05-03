@@ -18,7 +18,7 @@ public class InputFeatures extends AbstractInputFeatures {
     public CarType inputTypeCar() {
         String type;
         System.out.println("\n\n" + Arrays.toString(CarType.values()));
-        System.out.print("\n@ntrel car type ver@ nshvac tarberakneric : ");
+        System.out.print("\nChose the type written be fore! : ");
 
 
         while (true) {
@@ -27,7 +27,7 @@ public class InputFeatures extends AbstractInputFeatures {
                 CarType.valueOf(type);
                 return CarType.valueOf(type);
             } catch (IllegalArgumentException e) {
-                System.out.print("Aydpisi dasht goyutyun chuni @ntreq noric : ");
+                System.out.print("Such field doesn't exist try again: ");
             }
         }
     }
@@ -36,7 +36,7 @@ public class InputFeatures extends AbstractInputFeatures {
     public CarClass inputCarClass() {
         String type;
         System.out.println("\n\n" + Arrays.toString(CarClass.values()));
-        System.out.print("\n@ntrel car Class@ ver@ nshvac tarberakneric : ");
+        System.out.print("\nChose the class written be fore! : \": ");
 
 
         while (true) {
@@ -45,7 +45,7 @@ public class InputFeatures extends AbstractInputFeatures {
                 CarClass.valueOf(type);
                 return CarClass.valueOf(type);
             } catch (IllegalArgumentException e) {
-                System.out.print("Aydpisi dasht goyutyun chuni @ntreq noric : ");
+                System.out.print("Such field doesn't exist try again : ");
             }
         }
     }
@@ -54,7 +54,7 @@ public class InputFeatures extends AbstractInputFeatures {
     public Engine inputEngine() {
         String type;
         System.out.println("\n\n" + Arrays.toString(Engine.values()));
-        System.out.print("\n@ntrel car Class@ ver@ nshvac tarberakneric : ");
+        System.out.print("\nChose the Engine written be fore! : \": ");
 
 
         while (true) {
@@ -63,7 +63,7 @@ public class InputFeatures extends AbstractInputFeatures {
                 Engine.valueOf(type);
                 return Engine.valueOf(type);
             } catch (IllegalArgumentException e) {
-                System.out.print("Aydpisi dasht goyutyun chuni @ntreq noric : ");
+                System.out.print("Such field doesn't exist try again: ");
             }
         }
     }
@@ -72,7 +72,7 @@ public class InputFeatures extends AbstractInputFeatures {
     public Wheels inputWheels() {
         String type;
         System.out.println("\n\n" + Arrays.toString(Wheels.values()));
-        System.out.print("\n@ntrel car Class@ ver@ nshvac tarberakneric : ");
+        System.out.print("\nChose the wheels written be fore! : ");
 
 
         while (true) {
@@ -81,7 +81,7 @@ public class InputFeatures extends AbstractInputFeatures {
                 Wheels.valueOf(type);
                 return Wheels.valueOf(type);
             } catch (IllegalArgumentException e) {
-                System.out.print("Aydpisi dasht goyutyun chuni @ntreq noric : ");
+                System.out.print("Such field doesn't exist try again: ");
             }
         }
     }
@@ -90,7 +90,7 @@ public class InputFeatures extends AbstractInputFeatures {
     public ExteriorColor inputExteriorColor() {
         String type;
         System.out.println("\n\n" + Arrays.toString(ExteriorColor.values()));
-        System.out.print("\n@ntrel car Class@ ver@ nshvac tarberakneric : ");
+        System.out.print("\nChose the exterior written be fore! : ");
 
 
         while (true) {
@@ -99,7 +99,7 @@ public class InputFeatures extends AbstractInputFeatures {
                 ExteriorColor.valueOf(type);
                 return ExteriorColor.valueOf(type);
             } catch (IllegalArgumentException e) {
-                System.out.print("Aydpisi dasht goyutyun chuni @ntreq noric : ");
+                System.out.print("Such field doesn't exist try again: ");
             }
         }
     }
@@ -108,7 +108,7 @@ public class InputFeatures extends AbstractInputFeatures {
     public InteriorColor inputInteriorColor() {
         String type;
         System.out.println("\n\n" + Arrays.toString(InteriorColor.values()));
-        System.out.print("\n@ntrel car Class@ ver@ nshvac tarberakneric : ");
+        System.out.print("\nChose the interior written be fore! : ");
 
 
         while (true) {
@@ -117,13 +117,13 @@ public class InputFeatures extends AbstractInputFeatures {
                 InteriorColor.valueOf(type);
                 return InteriorColor.valueOf(type);
             } catch (IllegalArgumentException e) {
-                System.out.print("Aydpisi dasht goyutyun chuni @ntreq noric : ");
+                System.out.print("Such field doesn't exist try again: ");
             }
         }
     }
 
     public int inputYear() {
-        System.out.print("\n@ntrel Car Date : ");
+        System.out.print("\nChose car date : ");
         return sc.nextInt();
     }
 

@@ -5,16 +5,16 @@ import com.aca.car.fabric.car.features.types.car.ab.type.CarTypesAbstract;
 public class Sedan extends CarTypesAbstract {
     @Override
     public void tireNum() {
-        System.out.println("Sedan@ uni 4 aniv!");
+        System.out.println("Sedan car has 4 tire!");
     }
 
     @Override
     public void doorNum() {
-        System.out.println("Sedan@ uni 5 door!");
+        System.out.println("Sedan car has 5 door!");
     }
 
     @Override
     public void seatsNum() {
-        System.out.println("Sedan@ uni 5 nstatex!");
+        System.out.println("Sedan car has  5 seats!");
     }
 }

@@ -7,16 +7,16 @@ public class Hatchback extends CarTypesAbstract {
 
     @Override
     public void tireNum() {
-        System.out.println("Hatchback@ uni 4 aniv!");
+        System.out.println("Hatchback car has 4 tire!");
     }
 
     @Override
     public void doorNum() {
-        System.out.println("Hatchback@ uni 3 door!");
+        System.out.println("Hatchback car has 3 door!");
     }
 
     @Override
     public void seatsNum() {
-        System.out.println("Hatchback@ uni 5 nstatex!");
+        System.out.println("Hatchback car has 5 seats!");
     }
 }

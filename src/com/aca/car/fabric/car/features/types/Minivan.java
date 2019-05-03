@@ -5,16 +5,16 @@ import com.aca.car.fabric.car.features.types.car.ab.type.CarTypesAbstract;
 public class Minivan extends CarTypesAbstract {
     @Override
     public void tireNum() {
-        System.out.println("Minivan uni 4 aniv!");
+        System.out.println("Minivan car has 4 tire!");
     }
 
     @Override
     public void doorNum() {
-        System.out.println("Minivan uni 5 door!");
+        System.out.println("Minivan car has 5 doors!");
     }
 
     @Override
     public void seatsNum() {
-        System.out.println("Minivan uni 7 nstatex!");
+        System.out.println("Minivan car has 7 seats!");
     }
 }

@@ -5,16 +5,16 @@ import com.aca.car.fabric.car.features.types.car.ab.type.CarTypesAbstract;
 public class Tractor extends CarTypesAbstract {
     @Override
     public void tireNum() {
-        System.out.println("Tractor@ uni 4 aniv!");
+        System.out.println("Tractor car has 4 tire!");
     }
 
     @Override
     public void doorNum() {
-        System.out.println("Tractor@ uni 1 door!");
+        System.out.println("Tractor  car has 1 door!");
     }
 
     @Override
     public void seatsNum() {
-        System.out.println("Tractor@ uni 1 nstatex!");
+        System.out.println("Tractor car has 1 seats!");
     }
 }
