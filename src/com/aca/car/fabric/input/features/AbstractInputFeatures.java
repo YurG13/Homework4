@@ -7,7 +7,7 @@ import com.aca.car.fabric.car.features.properties.enumProperties.Engine;
 import com.aca.car.fabric.car.features.properties.enumProperties.Wheels;
 import com.aca.car.fabric.car.features.types.enumTypes.CarType;
 
-public class AbstractInputFeatures implements IInputFeatures{
+public class AbstractInputFeatures implements IInputFeatures {
     @Override
     public CarType inputTypeCar() {
         return null;
@@ -37,4 +37,5 @@ public class AbstractInputFeatures implements IInputFeatures{
     public InteriorColor inputInteriorColor() {
         return null;
     }
+
 }

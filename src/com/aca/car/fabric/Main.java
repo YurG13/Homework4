@@ -9,28 +9,37 @@ import com.aca.car.fabric.car.features.properties.CarProperties;
 import com.aca.car.fabric.car.features.properties.enumProperties.CarClass;
 import com.aca.car.fabric.car.features.properties.enumProperties.Engine;
 import com.aca.car.fabric.car.features.properties.enumProperties.Wheels;
-import com.aca.car.fabric.car.features.types.Motorcycle;
-import com.aca.car.fabric.car.features.types.car.ab.type.CarTypesAbstract;
 import com.aca.car.fabric.car.features.types.enumTypes.CarType;
+import com.aca.car.fabric.input.features.InputFeatures;
 
 public class Main {
     public static void main(String[] args) {
-        CarTypesAbstract carTypesAbstract = new Motorcycle();
+        InputFeatures inputFeatures = new InputFeatures();
+        SelectedFeatures selectedFeatures = new SelectedFeatures();
+        selectedFeatures.typeClass();
 
-        carTypesAbstract.doorNum();
-        carTypesAbstract.seatsNum();
-        carTypesAbstract.tireNum();
 
-        AbstractCarProperties abstractCarProperties = new CarProperties(CarType.Motorcycle);
+        selectedFeatures.carTypesAbstract.doorNum();
+        selectedFeatures.carTypesAbstract.seatsNum();
+        selectedFeatures.carTypesAbstract.tireNum();
 
-        abstractCarProperties.carClass(CarClass.Buisness);
-        abstractCarProperties.engine(Engine.Diesel);
-        abstractCarProperties.wheels(Wheels.Back_Wheel_Drive);
-        abstractCarProperties.years(2019);
+        AbstractCarProperties abstractCarProperties = new CarProperties();
+
+        CarClass carClass = inputFeatures.inputCarClass();
+        Engine engine = inputFeatures.inputEngine();
+        Wheels wheels = inputFeatures.inputWheels();
+        ExteriorColor exteriorColor = inputFeatures.inputExteriorColor();
+        InteriorColor interiorColor = inputFeatures.inputInteriorColor();
+        int year = inputFeatures.inputYear();
+
+        abstractCarProperties.carClass(carClass);
+        abstractCarProperties.engine(engine);
+        abstractCarProperties.wheels(wheels);
+        abstractCarProperties.years(year);
 
         AbstractInteriorExterior abstractInteriorExterior = new CarDesign();
 
-        abstractInteriorExterior.exteriorColor(ExteriorColor.Blue);
-        abstractInteriorExterior.interiorColor(InteriorColor.Any_Color);
+        abstractInteriorExterior.exteriorColor(exteriorColor);
+        abstractInteriorExterior.interiorColor(interiorColor);
     }
 }
