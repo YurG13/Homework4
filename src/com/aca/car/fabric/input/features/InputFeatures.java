@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class InputFeatures extends AbstractInputFeatures {
     private Scanner sc = new Scanner(System.in);
 
+
     @Override
     public CarType inputTypeCar() {
         String type;
@@ -125,5 +126,7 @@ public class InputFeatures extends AbstractInputFeatures {
         System.out.print("\n@ntrel Car Date : ");
         return sc.nextInt();
     }
+
+
 
 }
