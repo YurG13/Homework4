@@ -61,7 +61,7 @@ public class CarPrice extends DetailPrice{
                 price += price*hybrid/100;
                 break;
             case Electrical:
-                price += price*electric/100;
+                price += price*electrical/100;
                 break;
                 default:
                     break;
@@ -74,10 +74,10 @@ public class CarPrice extends DetailPrice{
                 price += price*jeep/100;
                 break;
             case Back_Wheel_Drive:
-                price += price*jeep/100;
+                price += price*back_Wheel_Drive/100;
                 break;
             case Front_Wheel_Drive:
-                price += price*jeep/100;
+                price += price*front_Wheel_Drive/100;
                 break;
         }
     }

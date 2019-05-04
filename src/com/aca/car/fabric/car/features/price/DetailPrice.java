@@ -1,6 +1,6 @@
 package com.aca.car.fabric.car.features.price;
 
-public class DetailPrice {
+class DetailPrice {
     // typeDetail
         double motorcycle = 200.10,
                 hatchback = 300.0,
